@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Random</string>
+
+    <string name="rvnumber">Number</string>
+    <string name="rvDice">Dice</string>
+    <string name="rvCoins">Coins</string>
+
+    <string name="number_standard_min">1</string>
+    <string name="number_standard_max">100</string>
+    <string name="random_number">Random Number</string>
+    <string name="text_min">min</string>
+    <string name="tezt_max">max</string>
+    <string name="to_text">to</string>
+    <string name="generat">Generat</string>
+
+    <string name="Error_max_toast">The data in the max is incorrectly written </string>
+    <string name="Error_min_toast">The data in the min is incorrectly written </string>
+    <string name="random_dice">Random Dice</string>
+    <string name="coin_toss">Coin toss</string>
+    <string name="options">Options</string>
+    <string name="version">Version 1.0</string>
+    <string name="developer">Develop by TeodorGG</string>
+    <string name="data_usage">This app does not collect anonymous usage data</string>
+    <string name="email">Email: tudor.devizamd@gmail.com</string>
+
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coinsActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/gobackvector"
+            tools:ignore="UnusedAttribute" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/oswald"
+                android:text="@string/coin_toss"
+                android:textColor="#000"
+                android:textSize="30sp" />
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:id="@+id/rvTouch"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/options"
+                        android:id="@+id/optionTextView"
+                        android:textColor="#000"
+                        android:textSize="27sp"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_margin="10dp"
+                            android:id="@+id/varCoinsOne"
+                            android:src="@drawable/ic_coinsvarone"
+                            />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"/>
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_margin="10dp"
+                            android:id="@+id/varCoinsSecond"
+                            android:src="@drawable/ic_coinsvarsecond"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="20dp"
+                        android:id="@+id/coinIm"
+
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+        
+
+</LinearLayout>

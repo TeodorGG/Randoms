@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diceActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/gobackvector" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ObsoleteLayoutParam,ScrollViewSize"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/oswald"
+                android:text="@string/random_dice"
+                android:textColor="#000"
+                android:textSize="30sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/number_standard_min"
+                android:textColor="#000"
+                android:id="@+id/nrOfDice"
+                />
+
+
+            <SeekBar
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:min="1"
+                android:id="@+id/seekbarNr"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                tools:targetApi="1"
+                tools:ignore="UnusedAttribute" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_diceone"
+                    android:id="@+id/imgD1"/>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sp1"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_diceone"
+                    android:id="@+id/imgD2"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_diceone"
+                    android:id="@+id/imgD3"/>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sp2"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_diceone"
+                    android:id="@+id/imgD4"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/generat"
+                android:id="@+id/generatBt"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

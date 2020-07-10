@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1DEDE"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_app"
+        android:text="@string/app_name"
+        android:fontFamily="@font/pacificregular"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1.2in"
+        tools:ignore="InOrMmUsage"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/dice1"
+        android:src="@drawable/dice1"
+        android:layout_marginTop="2.4in"
+        android:layout_marginStart="40dp"
+        android:rotation="30"
+        tools:ignore="InOrMmUsage,UnusedAttribute"
+        android:layout_marginLeft="40dp"
+        android:elevation="5dp"
+
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/dice2"
+        android:src="@drawable/dice2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2in"
+        android:rotation="-20"
+        tools:ignore="InOrMmUsage"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/dice3"
+        android:src="@drawable/dice3"
+        android:layout_marginTop="2.4in"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:rotation="30"
+        tools:ignore="InOrMmUsage"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="40dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-57dp"
+        android:src="@drawable/shadowbig2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="3in"
+        android:layout_marginEnd="-72dp"
+        android:layout_marginRight="-72dp"
+        android:src="@drawable/shadow"
+        tools:ignore="InOrMmUsage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2.9in"
+        android:layout_marginEnd="-72dp"
+        android:layout_marginRight="-72dp"
+        android:src="@drawable/shadow"
+        tools:ignore="InOrMmUsage,PxUsage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-59dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="3.2in"
+        android:layout_marginEnd="-72dp"
+        android:layout_marginRight="-72dp"
+        android:src="@drawable/shadow"
+        tools:ignore="InOrMmUsage,PxUsage"
+        android:layout_alignParentLeft="true" />
+
+
+</RelativeLayout>
